@@ -1,4 +1,6 @@
-﻿using Volo.Abp.Data;
+﻿using MongoDB.Driver;
+using SteffBeckers.Abp.Sales.Accounts;
+using Volo.Abp.Data;
 using Volo.Abp.MongoDB;
 
 namespace SteffBeckers.Abp.Sales.MongoDB
@@ -9,5 +11,6 @@ namespace SteffBeckers.Abp.Sales.MongoDB
         /* Define mongo collections here. Example:
          * IMongoCollection<Question> Questions { get; }
          */
+        IMongoCollection<Account> Accounts { get; }
     }
 }

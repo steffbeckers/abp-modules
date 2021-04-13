@@ -1,6 +1,8 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
+using SteffBeckers.Abp.Sales.Accounts;
 using Volo.Abp;
+using Volo.Abp.EntityFrameworkCore.Modeling;
 
 namespace SteffBeckers.Abp.Sales.EntityFrameworkCore
 {
@@ -38,6 +40,25 @@ namespace SteffBeckers.Abp.Sales.EntityFrameworkCore
                 b.HasIndex(q => q.CreationTime);
             });
             */
+
+            builder.Entity<Account>(b =>
+            {
+                b.ToTable(SalesDbProperties.DbTablePrefix + "Accounts", SalesDbProperties.DbSchema);
+                b.ConfigureByConvention(); // auto configure for the base class props
+
+                b.Property(p => p.Name)
+                    .HasMaxLength(AccountConsts.NameMaxLength);
+                b.HasIndex(p => p.Name);
+
+                b.Property(p => p.Email)
+                    .HasMaxLength(AccountConsts.EmailMaxLength);
+
+                b.Property(p => p.Telephone)
+                   .HasMaxLength(AccountConsts.TelephoneMaxLength);
+
+                b.Property(p => p.Website)
+                    .HasMaxLength(AccountConsts.WebsiteMaxLength);
+            });
         }
     }
 }

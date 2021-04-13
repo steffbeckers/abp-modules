@@ -9,6 +9,5 @@ namespace SteffBeckers.Abp.Sales
     )]
     public class SalesDomainModule : AbpModule
     {
-
     }
 }

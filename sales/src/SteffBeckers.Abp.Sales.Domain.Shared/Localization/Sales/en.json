@@ -1,7 +1,17 @@
 {
   "culture": "en",
   "texts": {
-    "ManageYourProfile":  "Manage your profile",
-    "SamplePageMessage": "A sample page for the Sales module"
+    "ManageYourProfile": "Manage your profile",
+    "SamplePageMessage": "A sample page for the Sales module",
+    "Name": "Name",
+    "E-mail": "E-mail",
+    "Telephone": "Telephone",
+    "Website": "Website",
+    "Permission:Sales": "Sales",
+    "Permission:Accounts": "Accounts",
+    "Permission:Accounts:Create": "Create",
+    "Permission:Accounts:Edit": "Edit",
+    "Permission:Accounts:Delete": "Delete",
+    "Sales:00001": "There is already an account with the same name: {name}"
   }
 }

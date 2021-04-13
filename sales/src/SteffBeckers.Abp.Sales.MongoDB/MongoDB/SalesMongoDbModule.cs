@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using SteffBeckers.Abp.Sales.Accounts;
 using Volo.Abp.Modularity;
 using Volo.Abp.MongoDB;
 
@@ -17,6 +18,7 @@ namespace SteffBeckers.Abp.Sales.MongoDB
                 /* Add custom repositories here. Example:
                  * options.AddRepository<Question, MongoQuestionRepository>();
                  */
+                options.AddRepository<Account, MongoAccountRepository>();
             });
         }
     }
