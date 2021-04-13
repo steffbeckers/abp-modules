@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>SteffBeckers.Abp.Sales</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.6.1" />
+    <ProjectReference Include="..\SteffBeckers.Abp.Sales.EntityFrameworkCore.Tests\SteffBeckers.Abp.Sales.EntityFrameworkCore.Tests.csproj" />
+  </ItemGroup>
+
+</Project>

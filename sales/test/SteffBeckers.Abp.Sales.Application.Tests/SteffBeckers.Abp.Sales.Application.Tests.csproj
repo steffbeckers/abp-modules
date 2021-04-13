@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>SteffBeckers.Abp.Sales</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\SteffBeckers.Abp.Sales.Application\SteffBeckers.Abp.Sales.Application.csproj" />
+    <ProjectReference Include="..\SteffBeckers.Abp.Sales.Domain.Tests\SteffBeckers.Abp.Sales.Domain.Tests.csproj" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.6.1" />
+  </ItemGroup>
+
+</Project>
