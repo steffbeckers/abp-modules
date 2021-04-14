@@ -47,3 +47,8 @@ steps:
     inputs:
       command: pack
       projects: "**/src/*.csproj"
+  # Authenticate with NuGet.org
+  - task: NuGetAuthenticate@0
+    displayName: Authenticate with NuGet.org
+    inputs:
+      nuGetServiceConnections: 'NuGetSteffBeckers'
