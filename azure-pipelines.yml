@@ -31,14 +31,8 @@ steps:
       command: test
       projects: "**/test/**/*.Tests.csproj"
       arguments: "--configuration $(buildConfiguration)"
-  - task: PublishTestResults@2
-    displayName: Publish test results
-    condition: succeededOrFailed()
-    inputs:
-      testRunner: VSTest
-      testResultsFiles: "**/*.trx"
   - task: DotNetCoreCLI@2
-    displayName: Pack projects as NuGet package
+    displayName: Pack projects as NuGet packages
     inputs:
       command: pack
       projects: "**/src/*.csproj"
