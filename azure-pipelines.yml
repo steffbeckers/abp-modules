@@ -46,4 +46,4 @@ steps:
     displayName: Push packages to NuGet
     inputs:
       targetType: "inline"
-      script: 'nuget push **/*.nupkg -ApiKey $(myNuGetApiKey) -Source https://api.nuget.org/v3/index.json -SkipDuplicate'
+      script: 'nuget push **/*.nupkg -ApiKey $(myNuGetApiKey) -Source https://api.nuget.org/v3/index.json -SkipDuplicate -NoSymbols'
