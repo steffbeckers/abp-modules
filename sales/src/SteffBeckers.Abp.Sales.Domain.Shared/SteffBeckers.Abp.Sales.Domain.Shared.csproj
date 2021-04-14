@@ -7,6 +7,7 @@
     <RootNamespace>SteffBeckers.Abp.Sales</RootNamespace>
     <Authors>Steff Beckers</Authors>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.1.1</Version>
     <GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
   </PropertyGroup>
 
