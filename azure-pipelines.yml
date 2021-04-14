@@ -47,8 +47,13 @@ steps:
     inputs:
       command: pack
       projects: "**/src/*.csproj"
-  # Authenticate with NuGet.org
+  # Authenticate with NuGet
   - task: NuGetAuthenticate@0
-    displayName: Authenticate with NuGet.org
+    displayName: Authenticate with NuGet
     inputs:
       nuGetServiceConnections: 'NuGetSteffBeckers'
+  # Push packages to NuGet
+  - task: NuGetCommand@2
+    displayName: Push packages to NuGet
+    inputs:
+      command: push
