@@ -36,6 +36,7 @@ steps:
       arguments: "--configuration $(buildConfiguration)"
   # Publish test results
   - task: PublishTestResults@2
+    displayName: Publish test results
     condition: succeededOrFailed()
     inputs:
       testRunner: VSTest
