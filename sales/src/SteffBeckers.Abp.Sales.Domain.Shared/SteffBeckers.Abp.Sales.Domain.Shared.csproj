@@ -6,8 +6,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>SteffBeckers.Abp.Sales</RootNamespace>
     <Authors>Steff Beckers</Authors>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.1.1</Version>
+    <Version>0.1.2</Version>
     <GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
   </PropertyGroup>
 
